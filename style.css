@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(197, 191, 191);
+  color: white;
+}
+h1 {
+  text-align: center;
+  margin: 100px auto 50px;
+  font-weight: 600;
+}
+form {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  height: 80px;
+  background: #19ac67;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid;
+  box-shadow: 0 0 10px 5px;
+}
+form input {
+  height: 100%;
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  padding: 0 30px;
+}
+form button {
+  padding: 0 40px;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  color: white;
+  font-size: 18px;
+  border: 0;
+  outline: 0;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+::placeholder {
+  color: white;
+}
+.search-form {
+}
+.search-box {
+}
+#search-result {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 50px 0px;
+  box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  -ms-layout-grid: char;
+  grid-auto-flow: row dense;
+}
+#show-more-btn {
+  background: rgb(0, 0, 0);
+  color: white;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin: 10px auto 100px;
+  cursor: pointer;
+  display: block;
+  display: none;
+  font-weight: 600;
+  font-size: 17px;
+}
+#show-more-btn.active {
+  display: block;
+}
+.p {
+  color: white;
+
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.p1 {
+  color: white;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.card {
+  background-color: rgb(68, 85, 83);
+  padding: 20px;
+  border-radius: 10px;
+}
+@media (max-width: 1673px) {
+  #search-result {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    width: 80%;
+  }
+}
+@media (max-width: 1110px) {
+  #search-result {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    width: 80%;
+  }
+}
